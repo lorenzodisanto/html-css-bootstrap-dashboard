@@ -1,0 +1,25 @@
+.border-dashed {
+  border: 1px dashed red;
+}
+
+#header {
+  height: 80px;
+  border: 1px dashed red;
+}
+
+#sidebar {
+  height: calc(100vh - 80px);
+  width: 80px;
+  background-image: url(../img/sidebar-bg.png);
+  background-color: #051e34;
+}
+
+#main {
+  width: calc(100vw - 80px);
+  overflow: auto;
+  height: calc(100vh - 80px);
+}
+
+#main-bar {
+  background-color: #1b72e8;
+}
