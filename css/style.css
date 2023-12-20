@@ -9,13 +9,20 @@
 
 #sidebar {
   height: calc(100vh - 80px);
-  width: 80px;
   background-image: url(../img/sidebar-bg.png);
   background-color: #051e34;
 }
 
+.sidebar-btn {
+  height: calc(100vh - 80px);
+}
+
+.admin {
+  margin-top: auto;
+}
+
 #main {
-  width: calc(100vw - 80px);
+  width: 100%;
   overflow: auto;
   height: calc(100vh - 80px);
 }
