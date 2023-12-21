@@ -13,6 +13,10 @@
   width: 50px;
 }
 
+.bell_color {
+  color: #e39631;
+}
+
 .dropdown-toggle::after {
   display: none;
 }
@@ -34,6 +38,11 @@
   height: calc(100vh - 80px);
 }
 
+.side_btn:hover {
+  cursor: pointer;
+  background-color: rgba(196, 196, 196, 0.5);
+}
+
 .admin {
   margin-top: auto;
 }
@@ -43,10 +52,19 @@
   width: 100%;
   overflow: auto;
   height: calc(100vh - 80px);
+  background-color: #f7f7f7;
+}
+
+.badge_bool {
+  background-color: #4050b5;
 }
 
 .code_box {
   background-color: #f26551;
+}
+
+.first_table {
+  width: 40%;
 }
 
 .img_stats {
