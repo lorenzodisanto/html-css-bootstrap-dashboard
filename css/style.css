@@ -2,11 +2,28 @@
   border: 1px dashed red;
 }
 
+/* HEADER NAVBAR */
 #header {
   height: 80px;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
+  line-height: 40px;
 }
 
+.logo-mob {
+  width: 50px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.dropdown-menu[data-bs-popper] {
+  position: absolute;
+  left: auto;
+  right: 0;
+}
+
+/* SIDEBAR */
 #sidebar {
   height: calc(100vh - 80px);
   background-image: url(../img/sidebar-bg.png);
@@ -21,6 +38,7 @@
   margin-top: auto;
 }
 
+/* MAIN CONTENT */
 #main {
   width: 100%;
   overflow: auto;
