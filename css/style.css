@@ -49,6 +49,20 @@
   background-color: #f26551;
 }
 
+.img_stats {
+  width: 100%;
+}
+
 #main-bar {
   background-color: #1b72e8;
+}
+
+.offcanvas.offcanvas-end {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .offcanvas.offcanvas-end {
+    width: 60%;
+  }
 }
