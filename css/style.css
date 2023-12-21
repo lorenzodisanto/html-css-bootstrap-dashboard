@@ -45,6 +45,10 @@
   height: calc(100vh - 80px);
 }
 
+.code_box {
+  background-color: #f26551;
+}
+
 #main-bar {
   background-color: #1b72e8;
 }
