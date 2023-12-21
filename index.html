@@ -41,12 +41,17 @@
             ><img src="./img/logo.svg" class="d-none d-lg-block" alt="logolg"
           /></a>
           <form class="d-flex flex-grow-1" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
+            <div class="input-group">
+              <div class="input-group-text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Prova a cercare: Lezioni di Laravel"
+                aria-label="Search"
+              />
+            </div>
           </form>
 
           <div id="navbarSupportedContent">
@@ -74,7 +79,7 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <i class="fa-solid fa-bell"></i>
+                  <i class="fa-solid fa-bell bell_color"></i>
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Profilo</a></li>
@@ -92,20 +97,22 @@
       <!-- SIDEBAR -->
       <nav id="sidebar" class="text-white">
         <div class="container-fluid">
-          <div class="sidebar-btn d-flex flex-column p-2">
-            <div class="d-flex gap-2 my-2">
+          <div class="sidebar-btn d-flex flex-column p-1">
+            <div class="d-flex gap-2 my-2 p-1 side_btn">
               <div><i class="fa-solid fa-house fa-lg"></i></div>
               <div class="d-none d-lg-block">Home</div>
             </div>
-            <div class="d-flex gap-3 my-2">
+            <div class="d-flex gap-3 my-2 p-1 ps-2 side_btn">
               <div><i class="fa-solid fa-chart-simple fa-lg"></i></div>
               <div class="d-none d-lg-block">Stats</div>
             </div>
-            <div class="d-flex gap-2 my-2">
-              <div><i class="fa-solid fa-signal fa-lg"></i></div>
+            <div class="d-flex gap-2 my-2 p-1 side_btn">
+              <div class="text-center">
+                <i class="fa-solid fa-signal fa-lg"></i>
+              </div>
               <div class="d-none d-lg-block">Signals</div>
             </div>
-            <div class="d-flex gap-3 mt-auto py-2">
+            <div class="d-flex gap-3 mt-auto p-1 side_btn">
               <div><i class="fa-solid fa-gear fa-lg"></i></div>
               <div class="d-none d-lg-block">Admin</div>
             </div>
@@ -298,29 +305,28 @@
               <div class="col-12 col-md-4 col-lg-6">
                 <div>
                   <h2 class="d-inline-block">Boolean</h2>
-                  <span class="badge rounded-pill text-bg-info text-white"
+                  <span class="badge rounded-pill text-white badge_bool"
                     >Piano blaze</span
                   >
                 </div>
-                <span class="badge rounded-pill text-bg-info text-white"
+                <span class="badge rounded-pill badge_bool text-white"
                   >3 app</span
                 >
                 <span><i class="fa-solid fa-angles-right"></i></span>
-                <span
-                  class="badge rounded-pill text-bg-info d-lg-none text-white"
+                <span class="badge rounded-pill badge_bool d-lg-none text-white"
                   >+</span
                 >
 
                 <span
-                  class="badge rounded-pill text-bg-info d-none d-lg-inline-block text-white"
+                  class="badge rounded-pill badge_bool d-none d-lg-inline-block text-white"
                   >Boolean mobile app</span
                 >
                 <span
-                  class="badge rounded-pill text-bg-info d-none d-lg-inline-block text-white"
+                  class="badge rounded-pill badge_bool d-none d-lg-inline-block text-white"
                   >Boolean web app</span
                 >
                 <span
-                  class="badge rounded-pill text-bg-info d-none d-lg-inline-block text-white"
+                  class="badge rounded-pill badge_bool d-none d-lg-inline-block text-white"
                   >Boolean blog app</span
                 >
               </div>
@@ -345,7 +351,7 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th scope="col">Nome</th>
+                        <th scope="col" class="first_table">Nome</th>
                         <th scope="col" class="d-none d-md-table-cell">
                           Data inizio
                         </th>
@@ -387,9 +393,9 @@
                           <span
                             class="code_box p-1 me-1 text-white rounded-circle"
                             ><i class="fa-solid fa-code"></i></span
-                          >Classe 75
+                          >Classe 76
                         </td>
-                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">16 Feb 2021</td>
                         <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <span class="badge text-bg-success">Done</span>
@@ -414,9 +420,38 @@
                           <span
                             class="code_box p-1 me-1 text-white rounded-circle"
                             ><i class="fa-solid fa-code"></i></span
-                          >Classe 75
+                          >Classe 77
                         </td>
-                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">17 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <span class="badge text-bg-warning text-white"
+                            >process</span
+                          >
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-pencil fa-sm"></i>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash fa-sm"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span
+                            class="code_box p-1 me-1 text-white rounded-circle"
+                            ><i class="fa-solid fa-code"></i></span
+                          >Classe 78
+                        </td>
+                        <td class="d-none d-md-table-cell">18 Feb 2021</td>
                         <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <span class="badge text-bg-success">Done</span>
@@ -441,9 +476,36 @@
                           <span
                             class="code_box p-1 me-1 text-white rounded-circle"
                             ><i class="fa-solid fa-code"></i></span
-                          >Classe 75
+                          >Classe 79
                         </td>
-                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">19 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">20%</td>
+                        <td>
+                          <span class="badge text-bg-danger">failed</span>
+                        </td>
+                        <td>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-pencil fa-sm"></i>
+                          </button>
+                          <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                          >
+                            <i class="fa-solid fa-trash fa-sm"></i>
+                          </button>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <span
+                            class="code_box p-1 me-1 text-white rounded-circle"
+                            ><i class="fa-solid fa-code"></i></span
+                          >Classe 80
+                        </td>
+                        <td class="d-none d-md-table-cell">20 Feb 2021</td>
                         <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <span class="badge text-bg-success">Done</span>
@@ -468,12 +530,12 @@
                           <span
                             class="code_box p-1 me-1 text-white rounded-circle"
                             ><i class="fa-solid fa-code"></i></span
-                          >Classe 75
+                          >Classe 81
                         </td>
-                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">21 Feb 2021</td>
                         <td class="d-none d-md-table-cell">20%</td>
                         <td>
-                          <span class="badge text-bg-success">Done</span>
+                          <span class="badge text-bg-danger">failed</span>
                         </td>
                         <td>
                           <button
@@ -495,63 +557,9 @@
                           <span
                             class="code_box p-1 me-1 text-white rounded-circle"
                             ><i class="fa-solid fa-code"></i></span
-                          >Classe 75
+                          >Classe 82
                         </td>
-                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="d-none d-md-table-cell">20%</td>
-                        <td>
-                          <span class="badge text-bg-success">Done</span>
-                        </td>
-                        <td>
-                          <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                          >
-                            <i class="fa-solid fa-pencil fa-sm"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                          >
-                            <i class="fa-solid fa-trash fa-sm"></i>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span
-                            class="code_box p-1 me-1 text-white rounded-circle"
-                            ><i class="fa-solid fa-code"></i></span
-                          >Classe 75
-                        </td>
-                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
-                        <td class="d-none d-md-table-cell">20%</td>
-                        <td>
-                          <span class="badge text-bg-success">Done</span>
-                        </td>
-                        <td>
-                          <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                          >
-                            <i class="fa-solid fa-pencil fa-sm"></i>
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                          >
-                            <i class="fa-solid fa-trash fa-sm"></i>
-                          </button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          <span
-                            class="code_box p-1 me-1 text-white rounded-circle"
-                            ><i class="fa-solid fa-code"></i></span
-                          >Classe 75
-                        </td>
-                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                        <td class="d-none d-md-table-cell">22 Feb 2021</td>
                         <td class="d-none d-md-table-cell">20%</td>
                         <td>
                           <span class="badge text-bg-success">Done</span>
