@@ -67,6 +67,11 @@
   width: 40%;
 }
 
+tr:hover td {
+  cursor: pointer;
+  background-color: rgba(196, 196, 196, 0.5);
+}
+
 .img_stats {
   width: 100%;
 }
